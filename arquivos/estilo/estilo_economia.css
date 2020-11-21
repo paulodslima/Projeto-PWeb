@@ -57,9 +57,10 @@ figure.foto-legenda:hover figcaption{
 criar uma borda na minha divisão (div) e
 dar um sombreamento nas bordas */
 div {
-	border: 5px solid white;
+	background-color: white;
+	border: 5px solid black;
 	border-radius: 10px;
-	box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.7);
 	padding: 10px;
 }
 
