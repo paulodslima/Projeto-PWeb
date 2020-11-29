@@ -5,26 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale= 1.0">
 	<title>Cultura-AL</title>
 	<link rel="shortcut icon" href="arquivos/img/imagens/favicon.ico" type="imagens/x-icon"/>
-	<link rel="stylesheet" href="arquivos/estilo/estilo.css">
-	<style>
-		p{
-			text-align: justify;
-			text-indent:30px;
-			font-family:Arial;
-		}
-	</style>
-	<style>
-		a{
-			font-weight: bold;
-			text-decoration: none;
-			color: blue;
-		}
-		a:hover {
-			text-decoration: underline;
-		}
-	</style>
+	<link rel="stylesheet" href="arquivos/estilo/estilo.css" media="all"/>
+	<link rel="stylesheet" href="small-screen.css" media="screen and (max-width:600px)">
+	<link rel="stylesheet" href="phone.css" media="screen and (min-width: 600px) and (max-width: 768px)">
+	<link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 992)">
+	<link rel="stylesheet" href="pc.css" media="screen and (min-width: 992) and (max-width: 1200px)">
 </head>
 <body>
+	<div>
 	<article id= "caixa">
 		<h1>Seja bem-vindo à cultura de Maceió!!</h1>
 	</article>
@@ -36,13 +24,45 @@
 		<picture>
 			<source media="{max-width: 750px}" src="arquivos/img/imagens/guerreiro_cultura_maceio.jpg" type="imagens/jpg">
 			<source media="{max-width: 1050px}" src="arquivos/img/imagens/guerreiro_cultura_maceio.jpg" type="imagens/jpg">
+			<figure class="foto-legenda">
 			<img src="arquivos/img/imagens/guerreiro_cultura_maceio.jpg" width="500"/>
+			</figure>
 			<br></br>
+			<figure class="foto-legenda">
 			<img src="arquivos/img/imagens/bumba-meu-boi.jpg" width="500"/>
 			<source media="{max-width: 750px}" src="arquivos/img/imagens/bumba-meu-boi.jpg" type="imagens/jpg">
 			<source media="{max-width: 1050px}" src="arquivos/img/imagens/bumba-meu-boi.jpg" type="imagens/jpg">
+			</figure>
 		</picture>
 	</center>
+	<br></br>
+	<br></br>
+	<br></br>
+	<table>
+		<caption>
+			Artesanato em Alagoas: onde comprar!!
+		</caption>
+		<thead>
+			<tr>
+				<th scope="col">Feiras de Artesanato</th>
+				<th scope="col">Local</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Feirinha do Artesanato</td>
+				<td>Praia de Pajuçara</td>	
+			</tr>
+			<tr>
+				<td>O Pavilhão do Artesanato</td>
+				<td>Praia de Ponta Verde</td>
+			</tr>
+			<tr>
+				<td>Mercado do Artesanato de Maceió</td>
+				<td>Bairro Levada</td>
+			</tr>
+		</tbody>
+	</table>
 	<p><a href="index.html">Voltar</a></p>
 </section>
 <aside id="lateral">
@@ -53,21 +73,30 @@
 
 		Outros pratos muito encontrados na região são o cuscuz de camarão, a moqueca de peixe, peixe ensopado, camarão frito, casquinha de siri e caldeirada de frutos do mar.</p>
 	<center>
-		<img src="arquivos/img/imagens/sururu.jpg" width="500"/>
+		<figure class="foto-legenda">
+		<img class="foto-legenda" src="arquivos/img/imagens/sururu.jpg" width="500"/>
+		</figure>
 		<br></br>
-		<img src="arquivos/img/imagens/frutos-do-mar.jpg" width="500"/>
+		<figure class="foto-legenda">
+		<img class="foto-legenda" src="arquivos/img/imagens/frutos-do-mar.jpg" width="500"/>
+		</figure>
 	</center>
 	<h2 class="topico">Artesanato</h2>
 	<p>O artesanato de um estado fala muito sobre sua cultura e seu povo. É considerado um dos maiores patrimônios de uma nação. Em Alagoas, mais de 10 mil artistas ajudam a elevar a história do estado com seu talento. Em suas mãos, os bens que a natureza proporciona recebem um carinho especial e são transformados em arte.</p>
 	<center>
-		<img src="arquivos/img/imagens/Rendas-Filé-AL.jpg" width="500"/>
+		<figure class="foto-legenda">
+		<img class="foto-legenda" src="arquivos/img/imagens/Rendas-Filé-AL.jpg" width="500"/>
+		</figure>
 		<br></br>
-		<img src="arquivos/img/imagens/artesanato.jpg" width="500"/>
+		<figure class="foto-legenda">
+		<img class="foto-legenda" src="arquivos/img/imagens/artesanato.jpg" width="500"/>
+		</figure>
 	</center>
 </aside>
 	<footer id="rodape">
 		<p>Copyright &copy; 2020 - by Waleska Souza<br/>
 		<a href="http://www.facebook.com.br/Cultura-AL" target="_blank">Facebook</a> </p>
 	</footer>
+	</div>
 </body>
 </html>
