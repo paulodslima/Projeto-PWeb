@@ -9,20 +9,13 @@
 		<link rel="stylesheet" href="phone.css" media="screen and (min-width: 600px) and (max-width: 768px)">
 		<link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 992)">
 		<link rel="stylesheet" href="pc.css" media="screen and (min-width: 992) and (max-width: 1200px)">
+		<script src="javascript.js"></script>
 	</head>
 	<body>
-		<div>
-			<legend> Deseja saber mais sobre Alagoas </legend>
-	<p>
-		<label for="AL"></label>
-		<select name="ala" id="iala">
-			<option value="">Escolha...</option>
-			<option value="his">Saber mais sobre sua história</option>
-			<option value="turis">Saber sobre seus pontos turísticos</option>
-			<option value="cult">Saber mais sobre sua cultura</option>
-			<option value="eco">Saber mais sobre sua Economia</option>
-		</select>
-	</p>
+		<div id="divisao">
+			<form>
+				<input type="button" value="Modo noturno (Off)" onclick="ligadesliga(this)">
+			</form>
 			<center>
 			<figure class="foto-legenda">
 			<img src="arquivos/img/img_index/principal.jpg.jpg" height="100%" width="100%">
@@ -88,6 +81,29 @@
 			<br>
 			<center>
 			<p>Clique aqui para ser redirecionado para a pagina <a href="sobre.html">Sobre.html</a></p>
+			<br/><br/>
+			<legend> Deseja saber mais sobre Alagoas </legend>
+			<p>
+			<label for="AL"></label>
+			<select name="ala" id="iala">
+				<option value="">Escolha...</option>
+				<option value="his">Saber mais sobre sua história</option>
+				<option value="turis">Saber sobre seus pontos turísticos</option>
+				<option value="cult">Saber mais sobre sua cultura</option>
+				<option value="eco">Saber mais sobre sua Economia</option>
+			</select>
+			</p>
+			<br><br>
+			<form method="POST" name="formulario" onsubmit="return validar(this);">
+				<legend>Deixe suas informações de contato</legend>
+				<label for="nomeUsuario">Nome:</label>
+				<input type="text" name="nome" id="nomeUsuario">
+				<label for="telefoneUsuario">telefone:</label>
+				<input type="tel" name="tele" id="telefoneUsuario" placeholder="Ex: (XX)XXXXX-XXXX" pattern="\([0-9]{2}\)[\s][0-9]{4,5}-[0-9]{4,5}">
+				<label for="e-mail">Email:</label>
+				<input type="email" name="email" id="e-mail" placeholder="Ex: XXXXX@XXXX.XXX">
+				<input type="submit" value="Enviar">
+			</form>
 			</center>
 		</div>
 	</body>
