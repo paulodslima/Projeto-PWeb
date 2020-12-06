@@ -10,18 +10,22 @@
 	<link rel="stylesheet" href="phone.css" media="screen and (min-width: 600px) and (max-width: 768px)">
 	<link rel="stylesheet" href="tablet.css" media="screen and (min-width: 768px) and (max-width: 992)">
 	<link rel="stylesheet" href="pc.css" media="screen and (min-width: 992) and (max-width: 1200px)">
+	<script src="javascript.js"></script>
 </head>
 <body>
-	<div>
+	<div id="divisao">
+		<form>
+			<input type="button" value="Modo noturno (Off)" onclick="ligadesliga(this)">
+		</form>
 	<article id= "caixa">
 		<h1>Seja bem-vindo à cultura de Maceió!!</h1>
 	</article>
 <section id="corpo">
-	<p>A <a href="http://cultura.al.gov.br" target="_blank">cultura alagoana</a> é baseada na culinária, no folclore e na tradição do artesanato e bordados que são considerados os mais ricos e variados do <strong>Nordeste</strong>, sendo produzidos em todos os quadrantes do estado. São trabalhos manuais que tem seus ensinamentos transmitidos por gerações, e que tem grande procura e valor tanto pelo mercado nacional como o internacional. Em <strong>Maceió</strong>, a capital, a referência do artesanato, na linha de bordados, é o bucólico bairro do Pontal da Barra, à margem da Lagoa Mundaú, onde os homens são pescadores e as mulheres exímias artesãs, que, em seus teares de madeira, produzem belíssimos desenhos em filé, renda e labirinto. Já os trançados de palha de ouricuri e cipó e as rendas singelezas podem ser encontradas na região do município de Água Branca, e tem a tradição de 5 e 30 anos respectivamente.</p>
+	<p class="texto">A <a class="ancora" href="http://cultura.al.gov.br" target="_blank">cultura alagoana</a> é baseada na culinária, no folclore e na tradição do artesanato e bordados que são considerados os mais ricos e variados do <strong>Nordeste</strong>, sendo produzidos em todos os quadrantes do estado. São trabalhos manuais que tem seus ensinamentos transmitidos por gerações, e que tem grande procura e valor tanto pelo mercado nacional como o internacional. Em <strong>Maceió</strong>, a capital, a referência do artesanato, na linha de bordados, é o bucólico bairro do Pontal da Barra, à margem da Lagoa Mundaú, onde os homens são pescadores e as mulheres exímias artesãs, que, em seus teares de madeira, produzem belíssimos desenhos em filé, renda e labirinto. Já os trançados de palha de ouricuri e cipó e as rendas singelezas podem ser encontradas na região do município de Água Branca, e tem a tradição de 5 e 30 anos respectivamente.</p>
 	<h2 class="topico">Festas Alagoanas</h2>
-	<p>O principal ícone das festas alagoanas é o Guerreiro, grupo multicolorido de dançadores e cantores, semelhante aos Reisados, mas com maior número de figurantes e episódios, maior riquezas nos trajes e enfeites e maior beleza nas músicas. O Auto dos Guerreiros é um folguedo surgido em Alagoas, por volta de 1927 e 1929. É o resultado da fusão de Reisados alagoanos, do antigo e desaparecido Auto do Caboclinhos, da Chegança e dos Pastoris. Há, ainda, as baianas, o toré dos índios, caboclinhos, bumba-meu-boi, cavalhada, e o fandango.</p>
+	<p class="texto">O principal ícone das festas alagoanas é o Guerreiro, grupo multicolorido de dançadores e cantores, semelhante aos Reisados, mas com maior número de figurantes e episódios, maior riquezas nos trajes e enfeites e maior beleza nas músicas. O Auto dos Guerreiros é um folguedo surgido em Alagoas, por volta de 1927 e 1929. É o resultado da fusão de Reisados alagoanos, do antigo e desaparecido Auto do Caboclinhos, da Chegança e dos Pastoris. Há, ainda, as baianas, o toré dos índios, caboclinhos, bumba-meu-boi, cavalhada, e o fandango.</p>
 	<center>
-		<picture>
+		<p class="texto"icture>
 			<source media="{max-width: 750px}" src="arquivos/img/imagens/guerreiro_cultura_maceio.jpg" type="imagens/jpg">
 			<source media="{max-width: 1050px}" src="arquivos/img/imagens/guerreiro_cultura_maceio.jpg" type="imagens/jpg">
 			<figure class="foto-legenda">
@@ -44,30 +48,30 @@
 		</caption>
 		<thead>
 			<tr>
-				<th scope="col">Feiras de Artesanato</th>
-				<th scope="col">Local</th>
+				<th scope="col" class="mudarCor">Feiras de Artesanato</th>
+				<th scope="col" class="mudarCor">Local</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td>Feirinha do Artesanato</td>
-				<td>Praia de Pajuçara</td>	
+				<td class="mudarCor">Feirinha do Artesanato</td>
+				<td class="mudarCor">Praia de Pajuçara</td>	
 			</tr>
 			<tr>
 				<td>O Pavilhão do Artesanato</td>
 				<td>Praia de Ponta Verde</td>
 			</tr>
 			<tr>
-				<td>Mercado do Artesanato de Maceió</td>
-				<td>Bairro Levada</td>
+				<td class="mudarCor">Mercado do Artesanato de Maceió</td>
+				<td class="mudarCor">Bairro Levada</td>
 			</tr>
 		</tbody>
 	</table>
-	<p><a href="index.html">Voltar</a></p>
+	<p class="texto"><a class="ancora" href="index.html">Voltar</a></p>
 </section>
 <aside id="lateral">
 	<h2 class="topico">Culinária</h2>
-		<p>As comidas típicas de Alagoas seduzem os turistas por conta da variedade de frutos do mar. A gastronomia da região tem diversos pratos com peixes, crustáceos, mariscos, moluscos, lagostas, camarões e siris. Uma das coisas que mais se encontra são as peixadas com pirão.
+		<p class="texto">As comidas típicas de Alagoas seduzem os turistas por conta da variedade de frutos do mar. A gastronomia da região tem diversos pratos com peixes, crustáceos, mariscos, moluscos, lagostas, camarões e siris. Uma das coisas que mais se encontra são as peixadas com pirão.
 
 		O Sururu é um exemplo de comida típica de Alagoas. Nesse prato, o molusco é servido na casca e o pirão é o acompanhamento.
 
@@ -82,7 +86,7 @@
 		</figure>
 	</center>
 	<h2 class="topico">Artesanato</h2>
-	<p>O artesanato de um estado fala muito sobre sua cultura e seu povo. É considerado um dos maiores patrimônios de uma nação. Em Alagoas, mais de 10 mil artistas ajudam a elevar a história do estado com seu talento. Em suas mãos, os bens que a natureza proporciona recebem um carinho especial e são transformados em arte.</p>
+	<p class="texto">O artesanato de um estado fala muito sobre sua cultura e seu povo. É considerado um dos maiores patrimônios de uma nação. Em Alagoas, mais de 10 mil artistas ajudam a elevar a história do estado com seu talento. Em suas mãos, os bens que a natureza proporciona recebem um carinho especial e são transformados em arte.</p>
 	<center>
 		<figure class="foto-legenda">
 		<img class="foto-legenda" src="arquivos/img/imagens/Rendas-Filé-AL.jpg" width="500"/>
@@ -94,8 +98,8 @@
 	</center>
 </aside>
 	<footer id="rodape">
-		<p>Copyright &copy; 2020 - by Waleska Souza<br/>
-		<a href="http://www.facebook.com.br/Cultura-AL" target="_blank">Facebook</a> </p>
+		<p class="texto">Copyright &copy; 2020 - by Waleska Souza<br/>
+		<a class="ancora" href="http://www.facebook.com.br/Cultura-AL" target="_blank">Facebook</a> </p>
 	</footer>
 	</div>
 </body>

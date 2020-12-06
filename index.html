@@ -30,23 +30,23 @@
 			<hr>
 			<h3>A história de Alagoas se inicia antes do descobrimento do Brasil pelos portugueses, 
 			o estado era povoada pelos índios caetés. </h3>
-			<p>DESEJA SABER MAIS SOBRE SUA HISTÓRIA? click neste <a href="pagina_historia.html">link</a></p>
+			<p class="texto">DESEJA SABER MAIS SOBRE SUA HISTÓRIA? click neste <a class="ancora" href="pagina_historia.html">link</a></p>
 			<h2>Pontos turísticos de AL</h2>
 			<hr>
 			<h3>Praia do francês, praia do gunga, dunas do marapé, foz do são francisco, praia do carro quebrado, 
 			praia de tabuba, praia de ipioca, paripueira, pajuçara e muito mais.</h3>
-			<p>DESEJA SABER MAIS SOBRE SEUS PONTOS TURISTICOS? click neste <a href="pagina_turismo.html">link</a></p>
+			<p>DESEJA SABER MAIS SOBRE SEUS PONTOS TURISTICOS? click neste <a href="pagina_turismo.html" class="ancora">link</a></p>
 			<h2>Cultura de AL</h2>
 			<hr>
 			<h3>A cultura alagoana é um misto de influências indígenas, africanas e europeias. Essa influência
 			é percebida nas festas, no artesanato e na culinária.</h3>
-			<p>DESEJA SABER MAIS SOBRE SUA CULTURA? click neste <a href="pagina_cultura.html">link</a> </p>
+			<p>DESEJA SABER MAIS SOBRE SUA CULTURA? click neste <a href="pagina_cultura.html" class="ancora">link</a> </p>
 			<h2>Economia de AL</h2>
 			<hr>
 			<h3>Os principais produtos de exportação são, respectivamente, açúcar de cana, álcool etílico, outros açúcares e 
 			cloreto de etileno. As importações são: adubos e fertilizantes, trigo, produtos das indústrias químicas, 
 			componentes de fertilizantes, plástico, borracha e minério de molibdênio.</h3>
-			<p>DESEJA SABER MAIS SOBRE SUA ECONOMIA? click neste <a href="pagina_economia.html">link</a> </p>
+			<p>DESEJA SABER MAIS SOBRE SUA ECONOMIA? click neste <a href="pagina_economia.html" class="ancora">link</a> </p>
 			<h2>
 				Os três municípios mais populosos de AL
 			</h2>
@@ -56,23 +56,23 @@
 						3 municípios mais populosos
 					</caption>
 					<tr>
-						<th scope="col">Município</th>
-						<th scope="col">População</th>
+						<th scope="col" class="mudarCor">Município</th>
+						<th scope="col" class="mudarCor">População</th>
 					</tr>
 					<tr>
 						<td>Maceió</td>
 						<td>932.078</td>
 					</tr>
 					<tr>
-						<td>Arapiraca</td>
-						<td>233.047</td>
+						<td class="mudarCor">Arapiraca</td>
+						<td class="mudarCor">233.047</td>
 					</tr>
 					<tr>
 						<td>Rio Largo</td>
 						<td>75.120</td>
 					</tr>
 					<tr>
-						<td colspan="2">-</td>
+						<td colspan="2" class="mudarCor">-</td>
 					</tr>
 				</table>
 			</center>
@@ -80,7 +80,7 @@
 			<br>
 			<br>
 			<center>
-			<p>Clique aqui para ser redirecionado para a pagina <a href="sobre.html">Sobre.html</a></p>
+			<p>Clique aqui para ser redirecionado para a pagina <a href="sobre.html" class="ancora">Sobre.html</a></p>
 			<br/><br/>
 			<legend> Deseja saber mais sobre Alagoas </legend>
 			<p>
@@ -94,14 +94,20 @@
 			</select>
 			</p>
 			<br><br>
-			<form method="POST" name="formulario" onsubmit="return validar(this);">
+			
+			<form method="GET" name="formulario" onsubmit="return validar(this);">
 				<legend>Deixe suas informações de contato</legend>
-				<label for="nomeUsuario">Nome:</label>
+				<label for="nomeUsuario">Nome: </label>
 				<input type="text" name="nome" id="nomeUsuario">
-				<label for="telefoneUsuario">telefone:</label>
+				<label for="idadeNumero">Idade: </label>
+				<input type="number" name="idade" id="idadeNumero">
+				<label for="nascimento">Data de nascimento: </label>
+				<input type="date" name="dataNascimento" id="nascimento">
+				<label for="telefoneUsuario">telefone: </label>
 				<input type="tel" name="tele" id="telefoneUsuario" placeholder="Ex: (XX)XXXXX-XXXX" pattern="\([0-9]{2}\)[\s][0-9]{4,5}-[0-9]{4,5}">
-				<label for="e-mail">Email:</label>
+				<label for="e-mail">Email: </label>
 				<input type="email" name="email" id="e-mail" placeholder="Ex: XXXXX@XXXX.XXX">
+				<input type="reset" value="Limpar/Resetar">
 				<input type="submit" value="Enviar">
 			</form>
 			</center>
