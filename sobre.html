@@ -5,9 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre.html</title>
     <link rel="stylesheet" href="arquivos/estilo/estilo.css" media="all"/>
+    <!-- BootStrap4, código -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Fim -->
     <script src="javascript.js"></script>
 </head>
 <body>
+    <!-- Barra de navegação com BootStrap4 -->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+
+				<a class="navbar-brand cor-branca h1 mb-0" href="index.html">Projeto Web</a>
+
+				<!-- Barra de navegação interativa para tela pequenas -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="menu">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item ml-4 mr-4">
+							<a class="nav-lik cor-branca " href="index.html">Inicio</a>
+						</li>
+						<li class="nav-item ml-4 mr-4">
+							<a class="nav-lik cor-branca" href="pagina_historia.html">Historia</a>
+						</li>
+						<li class="nav-item ml-4 mr-4">
+							<a class="nav-lik cor-branca" href="pagina_turismo.html">Turismo</a>
+						</li>
+						<li class="nav-item ml-4 mr-4">
+							<a class="nav-lik cor-branca" href="pagina_cultura.html">Cultura</a>
+						</li>
+						<li class="nav-item ml-4 mr-4">
+							<a class="nav-lik cor-branca" href="pagina_economia.html">Economia</a>
+						</li>
+						<li class="nav-item ml-4 mr-4">
+							<a class="nav-lik cor-branca" href="sobre.html">Creditos</a>
+						</li>
+					</ul>
+
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navdrop">
+							Sobre
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="https://github.com/paulodslima/Projeto-PWeb" target="_place">GitHub</a>
+						</div>
+						<li class="">
+						</li>
+					</ul>
+				</div>
+				<!-- Fim -->
+				</div>
+		</nav>
+		<!-- Fim -->
     <div style="padding: 10px; margin: 10px; border: 2px solid black; box-shadow: 0px 0px 10px rgba(0,0,0,0.7); border-radius: 10px; text-align: center; font-size: 15pt; font-family: Arial, sans-serif;" id="divisao">
         <form>
             <input type="button" value="Modo noturno (Off)" onclick="ligadesliga(this)">
@@ -15,5 +68,10 @@
         Link para o Github: <a class="ancora" href="https://github.com/paulodslima/Projeto-PWeb.git">https://github.com/paulodslima/Projeto-PWeb.git</a><br><br>
         Grupo: Izabelly Cristine, Ester Alves , Vivian Keisy , Waleska de Souza , Paulo Diego
     </div>
+    <!-- Código bootStrap4, JavaScript-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- Fim -->
 </body>
 </html>
