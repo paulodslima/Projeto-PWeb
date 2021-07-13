@@ -1,4 +1,4 @@
-# Projeto PWeb
+# Projeto APSW
  ## Trabalho remoto de programação web modificado para rodar no Heroku.
 
 **Resumo do conteúdo**: Esse foi um projeto feito em grupo de um site que agora foi adequado para rodar no heroku como um app.<br/>
